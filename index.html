@@ -1,0 +1,10 @@
+<div id="twidarker"></div>
+<script>
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+let element = document.getElementById('twidarker');
+element.insertAdjacentHTML('afterend', '<meta name="twitter:widgets:theme" content="dark"/>');
+} else {
+let element = document.getElementById('twidarker');
+element.insertAdjacentHTML('afterend', '<meta name="twitter:widgets:theme" content="light"/>');
+}
+</script>
